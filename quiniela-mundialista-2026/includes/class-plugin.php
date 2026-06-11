@@ -15,8 +15,18 @@ class QM2026_Plugin {
 		( new QM2026_Admin() )->hooks();
 		( new QM2026_Shortcodes() )->hooks();
 		( new QM2026_Ajax() )->hooks();
+		add_action( 'init', array( $this, 'maybe_sync_fixture_data' ) );
 		add_action( 'init', array( $this, 'capture_private_token' ) );
 	}
+	public function maybe_sync_fixture_data(): void {
+		if ( QM2026_FIXTURE_DATA_VERSION === qm2026_get_setting( 'fixture_data_version', '' ) ) {
+			return;
+		}
+
+		QM2026_Activator::seed_data();
+		qm2026_update_setting( 'fixture_data_version', QM2026_FIXTURE_DATA_VERSION );
+	}
+
 	public function capture_private_token(): void {
 		if ( ! empty( $_GET['qm2026_token'] ) ) {
 			$token = sanitize_text_field( wp_unslash( $_GET['qm2026_token'] ) );
