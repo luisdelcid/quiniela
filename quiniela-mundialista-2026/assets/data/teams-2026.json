@@ -1,335 +1,290 @@
 [
   {
-    "code": "CAN",
-    "name": "Canadá",
-    "group": "A",
-    "flag": "🇨🇦"
-  },
-  {
     "code": "MEX",
     "name": "México",
     "group": "A",
     "flag": "🇲🇽"
   },
   {
+    "code": "RSA",
+    "name": "Sudáfrica",
+    "group": "A",
+    "flag": "🇿🇦"
+  },
+  {
+    "code": "KOR",
+    "name": "República de Corea",
+    "group": "A",
+    "flag": "🇰🇷"
+  },
+  {
+    "code": "CZE",
+    "name": "República Checa",
+    "group": "A",
+    "flag": "🇨🇿"
+  },
+  {
+    "code": "CAN",
+    "name": "Canadá",
+    "group": "B",
+    "flag": "🇨🇦"
+  },
+  {
+    "code": "BIH",
+    "name": "Bosnia y Herzegovina",
+    "group": "B",
+    "flag": "🇧🇦"
+  },
+  {
+    "code": "QAT",
+    "name": "Catar",
+    "group": "B",
+    "flag": "🇶🇦"
+  },
+  {
+    "code": "SUI",
+    "name": "Suiza",
+    "group": "B",
+    "flag": "🇨🇭"
+  },
+  {
+    "code": "BRA",
+    "name": "Brasil",
+    "group": "C",
+    "flag": "🇧🇷"
+  },
+  {
+    "code": "MAR",
+    "name": "Marruecos",
+    "group": "C",
+    "flag": "🇲🇦"
+  },
+  {
+    "code": "HAI",
+    "name": "Haití",
+    "group": "C",
+    "flag": "🇭🇹"
+  },
+  {
+    "code": "SCO",
+    "name": "Escocia",
+    "group": "C",
+    "flag": "🏴"
+  },
+  {
     "code": "USA",
     "name": "Estados Unidos",
-    "group": "A",
+    "group": "D",
     "flag": "🇺🇸"
   },
   {
-    "code": "A2",
-    "name": "Clasificado A2",
-    "group": "A",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "A3",
-    "name": "Clasificado A3",
-    "group": "A",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "A4",
-    "name": "Clasificado A4",
-    "group": "A",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "B1",
-    "name": "Clasificado B1",
-    "group": "B",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "B2",
-    "name": "Clasificado B2",
-    "group": "B",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "B3",
-    "name": "Clasificado B3",
-    "group": "B",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "B4",
-    "name": "Clasificado B4",
-    "group": "B",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "C1",
-    "name": "Clasificado C1",
-    "group": "C",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "C2",
-    "name": "Clasificado C2",
-    "group": "C",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "C3",
-    "name": "Clasificado C3",
-    "group": "C",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "C4",
-    "name": "Clasificado C4",
-    "group": "C",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "D1",
-    "name": "Clasificado D1",
+    "code": "PAR",
+    "name": "Paraguay",
     "group": "D",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇵🇾"
   },
   {
-    "code": "D2",
-    "name": "Clasificado D2",
+    "code": "AUS",
+    "name": "Australia",
     "group": "D",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇦🇺"
   },
   {
-    "code": "D3",
-    "name": "Clasificado D3",
+    "code": "TUR",
+    "name": "Turquía",
     "group": "D",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇹🇷"
   },
   {
-    "code": "D4",
-    "name": "Clasificado D4",
-    "group": "D",
-    "flag": "",
-    "placeholder": true
-  },
-  {
-    "code": "E1",
-    "name": "Clasificado E1",
+    "code": "GER",
+    "name": "Alemania",
     "group": "E",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇩🇪"
   },
   {
-    "code": "E2",
-    "name": "Clasificado E2",
+    "code": "CUW",
+    "name": "Curazao",
     "group": "E",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇨🇼"
   },
   {
-    "code": "E3",
-    "name": "Clasificado E3",
+    "code": "CIV",
+    "name": "Costa de Marfil",
     "group": "E",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇨🇮"
   },
   {
-    "code": "E4",
-    "name": "Clasificado E4",
+    "code": "ECU",
+    "name": "Ecuador",
     "group": "E",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇪🇨"
   },
   {
-    "code": "F1",
-    "name": "Clasificado F1",
+    "code": "NED",
+    "name": "Países Bajos",
     "group": "F",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇳🇱"
   },
   {
-    "code": "F2",
-    "name": "Clasificado F2",
+    "code": "JPN",
+    "name": "Japón",
     "group": "F",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇯🇵"
   },
   {
-    "code": "F3",
-    "name": "Clasificado F3",
+    "code": "SWE",
+    "name": "Suecia",
     "group": "F",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇸🇪"
   },
   {
-    "code": "F4",
-    "name": "Clasificado F4",
+    "code": "TUN",
+    "name": "Túnez",
     "group": "F",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇹🇳"
   },
   {
-    "code": "G1",
-    "name": "Clasificado G1",
+    "code": "BEL",
+    "name": "Bélgica",
     "group": "G",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇧🇪"
   },
   {
-    "code": "G2",
-    "name": "Clasificado G2",
+    "code": "EGY",
+    "name": "Egipto",
     "group": "G",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇪🇬"
   },
   {
-    "code": "G3",
-    "name": "Clasificado G3",
+    "code": "IRN",
+    "name": "RI de Irán",
     "group": "G",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇮🇷"
   },
   {
-    "code": "G4",
-    "name": "Clasificado G4",
+    "code": "NZL",
+    "name": "Nueva Zelanda",
     "group": "G",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇳🇿"
   },
   {
-    "code": "H1",
-    "name": "Clasificado H1",
+    "code": "ESP",
+    "name": "España",
     "group": "H",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇪🇸"
   },
   {
-    "code": "H2",
-    "name": "Clasificado H2",
+    "code": "CPV",
+    "name": "Cabo Verde",
     "group": "H",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇨🇻"
   },
   {
-    "code": "H3",
-    "name": "Clasificado H3",
+    "code": "KSA",
+    "name": "Arabia Saudí",
     "group": "H",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇸🇦"
   },
   {
-    "code": "H4",
-    "name": "Clasificado H4",
+    "code": "URU",
+    "name": "Uruguay",
     "group": "H",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇺🇾"
   },
   {
-    "code": "I1",
-    "name": "Clasificado I1",
+    "code": "FRA",
+    "name": "Francia",
     "group": "I",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇫🇷"
   },
   {
-    "code": "I2",
-    "name": "Clasificado I2",
+    "code": "SEN",
+    "name": "Senegal",
     "group": "I",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇸🇳"
   },
   {
-    "code": "I3",
-    "name": "Clasificado I3",
+    "code": "IRQ",
+    "name": "Irak",
     "group": "I",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇮🇶"
   },
   {
-    "code": "I4",
-    "name": "Clasificado I4",
+    "code": "NOR",
+    "name": "Noruega",
     "group": "I",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇳🇴"
   },
   {
-    "code": "J1",
-    "name": "Clasificado J1",
+    "code": "ARG",
+    "name": "Argentina",
     "group": "J",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇦🇷"
   },
   {
-    "code": "J2",
-    "name": "Clasificado J2",
+    "code": "ALG",
+    "name": "Argelia",
     "group": "J",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇩🇿"
   },
   {
-    "code": "J3",
-    "name": "Clasificado J3",
+    "code": "AUT",
+    "name": "Austria",
     "group": "J",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇦🇹"
   },
   {
-    "code": "J4",
-    "name": "Clasificado J4",
+    "code": "JOR",
+    "name": "Jordania",
     "group": "J",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇯🇴"
   },
   {
-    "code": "K1",
-    "name": "Clasificado K1",
+    "code": "POR",
+    "name": "Portugal",
     "group": "K",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇵🇹"
   },
   {
-    "code": "K2",
-    "name": "Clasificado K2",
+    "code": "COD",
+    "name": "RD Congo",
     "group": "K",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇨🇩"
   },
   {
-    "code": "K3",
-    "name": "Clasificado K3",
+    "code": "UZB",
+    "name": "Uzbekistán",
     "group": "K",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇺🇿"
   },
   {
-    "code": "K4",
-    "name": "Clasificado K4",
+    "code": "COL",
+    "name": "Colombia",
     "group": "K",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇨🇴"
   },
   {
-    "code": "L1",
-    "name": "Clasificado L1",
+    "code": "ENG",
+    "name": "Inglaterra",
     "group": "L",
-    "flag": "",
-    "placeholder": true
+    "flag": "🏴"
   },
   {
-    "code": "L2",
-    "name": "Clasificado L2",
+    "code": "CRO",
+    "name": "Croacia",
     "group": "L",
-    "flag": "",
-    "placeholder": true
+    "flag": "🇭🇷"
+  },
+  {
+    "code": "GHA",
+    "name": "Ghana",
+    "group": "L",
+    "flag": "🇬🇭"
+  },
+  {
+    "code": "PAN",
+    "name": "Panamá",
+    "group": "L",
+    "flag": "🇵🇦"
   }
 ]

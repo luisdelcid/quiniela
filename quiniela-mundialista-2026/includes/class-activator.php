@@ -9,6 +9,7 @@ class QM2026_Activator {
 		self::add_capabilities();
 		self::seed_settings();
 		self::seed_data();
+		qm2026_update_setting( 'fixture_data_version', QM2026_FIXTURE_DATA_VERSION );
 		self::create_default_pool();
 		self::create_landing_page();
 	}
@@ -31,7 +32,7 @@ class QM2026_Activator {
 		}
 	}
 
-	private static function seed_data(): void {
+	public static function seed_data(): void {
 		$importer = new QM2026_Import_Export();
 		$teams    = QM2026_PATH . 'assets/data/teams-2026.json';
 		$fixture  = QM2026_PATH . 'assets/data/fixture-2026.json';
