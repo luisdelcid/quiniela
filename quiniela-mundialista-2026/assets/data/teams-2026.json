@@ -1,0 +1,335 @@
+[
+  {
+    "code": "CAN",
+    "name": "Canadá",
+    "group": "A",
+    "flag": "🇨🇦"
+  },
+  {
+    "code": "MEX",
+    "name": "México",
+    "group": "A",
+    "flag": "🇲🇽"
+  },
+  {
+    "code": "USA",
+    "name": "Estados Unidos",
+    "group": "A",
+    "flag": "🇺🇸"
+  },
+  {
+    "code": "A2",
+    "name": "Clasificado A2",
+    "group": "A",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "A3",
+    "name": "Clasificado A3",
+    "group": "A",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "A4",
+    "name": "Clasificado A4",
+    "group": "A",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "B1",
+    "name": "Clasificado B1",
+    "group": "B",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "B2",
+    "name": "Clasificado B2",
+    "group": "B",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "B3",
+    "name": "Clasificado B3",
+    "group": "B",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "B4",
+    "name": "Clasificado B4",
+    "group": "B",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "C1",
+    "name": "Clasificado C1",
+    "group": "C",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "C2",
+    "name": "Clasificado C2",
+    "group": "C",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "C3",
+    "name": "Clasificado C3",
+    "group": "C",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "C4",
+    "name": "Clasificado C4",
+    "group": "C",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "D1",
+    "name": "Clasificado D1",
+    "group": "D",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "D2",
+    "name": "Clasificado D2",
+    "group": "D",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "D3",
+    "name": "Clasificado D3",
+    "group": "D",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "D4",
+    "name": "Clasificado D4",
+    "group": "D",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "E1",
+    "name": "Clasificado E1",
+    "group": "E",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "E2",
+    "name": "Clasificado E2",
+    "group": "E",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "E3",
+    "name": "Clasificado E3",
+    "group": "E",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "E4",
+    "name": "Clasificado E4",
+    "group": "E",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "F1",
+    "name": "Clasificado F1",
+    "group": "F",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "F2",
+    "name": "Clasificado F2",
+    "group": "F",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "F3",
+    "name": "Clasificado F3",
+    "group": "F",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "F4",
+    "name": "Clasificado F4",
+    "group": "F",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "G1",
+    "name": "Clasificado G1",
+    "group": "G",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "G2",
+    "name": "Clasificado G2",
+    "group": "G",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "G3",
+    "name": "Clasificado G3",
+    "group": "G",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "G4",
+    "name": "Clasificado G4",
+    "group": "G",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "H1",
+    "name": "Clasificado H1",
+    "group": "H",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "H2",
+    "name": "Clasificado H2",
+    "group": "H",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "H3",
+    "name": "Clasificado H3",
+    "group": "H",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "H4",
+    "name": "Clasificado H4",
+    "group": "H",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "I1",
+    "name": "Clasificado I1",
+    "group": "I",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "I2",
+    "name": "Clasificado I2",
+    "group": "I",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "I3",
+    "name": "Clasificado I3",
+    "group": "I",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "I4",
+    "name": "Clasificado I4",
+    "group": "I",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "J1",
+    "name": "Clasificado J1",
+    "group": "J",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "J2",
+    "name": "Clasificado J2",
+    "group": "J",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "J3",
+    "name": "Clasificado J3",
+    "group": "J",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "J4",
+    "name": "Clasificado J4",
+    "group": "J",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "K1",
+    "name": "Clasificado K1",
+    "group": "K",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "K2",
+    "name": "Clasificado K2",
+    "group": "K",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "K3",
+    "name": "Clasificado K3",
+    "group": "K",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "K4",
+    "name": "Clasificado K4",
+    "group": "K",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "L1",
+    "name": "Clasificado L1",
+    "group": "L",
+    "flag": "",
+    "placeholder": true
+  },
+  {
+    "code": "L2",
+    "name": "Clasificado L2",
+    "group": "L",
+    "flag": "",
+    "placeholder": true
+  }
+]
