@@ -116,9 +116,58 @@ function qm2026_current_participant(): ?object {
 	return null;
 }
 
+function qm2026_site_datetime_timestamp( ?string $datetime ): ?int {
+	$datetime = trim( (string) $datetime );
+	if ( '' === $datetime ) {
+		return null;
+	}
+
+	$normalized = str_replace( 'T', ' ', $datetime );
+	if ( 16 === strlen( $normalized ) ) {
+		$normalized .= ':00';
+	}
+
+	$timezone = wp_timezone();
+	$parsed   = DateTimeImmutable::createFromFormat( '!Y-m-d H:i:s', $normalized, $timezone );
+	$errors   = DateTimeImmutable::getLastErrors();
+
+	if ( $parsed instanceof DateTimeImmutable && ( false === $errors || ( 0 === $errors['warning_count'] && 0 === $errors['error_count'] ) ) ) {
+		return $parsed->getTimestamp();
+	}
+
+	try {
+		return ( new DateTimeImmutable( $normalized, $timezone ) )->getTimestamp();
+	} catch ( Exception $e ) {
+		return null;
+	}
+}
+
+function qm2026_format_site_datetime( ?string $datetime, string $format ): string {
+	$timestamp = qm2026_site_datetime_timestamp( $datetime );
+	if ( null === $timestamp ) {
+		return '';
+	}
+
+	return wp_date( $format, $timestamp, wp_timezone() );
+}
+
 function qm2026_match_is_locked( object $match, ?array $rules = null ): bool {
+	if ( 'finished' === $match->status || 'live' === $match->status ) {
+		return true;
+	}
+
 	$rules        = $rules ?: qm2026_default_rules();
 	$lock_minutes = isset( $rules['lock_minutes'] ) ? absint( $rules['lock_minutes'] ) : 0;
-	$deadline     = ! empty( $match->prediction_deadline ) ? strtotime( $match->prediction_deadline ) : ( strtotime( $match->match_datetime ) - ( $lock_minutes * MINUTE_IN_SECONDS ) );
-	return current_time( 'timestamp' ) >= $deadline || 'finished' === $match->status || 'live' === $match->status;
+	$deadline     = ! empty( $match->prediction_deadline ) ? qm2026_site_datetime_timestamp( $match->prediction_deadline ) : null;
+
+	if ( null === $deadline ) {
+		$match_datetime = qm2026_site_datetime_timestamp( $match->match_datetime );
+		if ( null === $match_datetime ) {
+			return true;
+		}
+
+		$deadline = $match_datetime - ( $lock_minutes * MINUTE_IN_SECONDS );
+	}
+
+	return time() >= $deadline;
 }

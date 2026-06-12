@@ -10,10 +10,10 @@ $phase_labels = qm2026_phases();
 	<?php
 	$current = '';
 	foreach ( $matches as $match ) :
-		$group = $match->phase . '-' . $match->group_code . '-' . gmdate( 'Y-m-d', strtotime( $match->match_datetime ) );
+		$group = $match->phase . '-' . $match->group_code . '-' . qm2026_format_site_datetime( $match->match_datetime, 'Y-m-d' );
 		if ( $group !== $current ) {
 			$current = $group;
-			echo '<h3>' . esc_html( ( $phase_labels[ $match->phase ] ?? $match->phase ) . ' ' . $match->group_code . ' · ' . date_i18n( get_option( 'date_format' ), strtotime( $match->match_datetime ) ) ) . '</h3>';
+			echo '<h3>' . esc_html( ( $phase_labels[ $match->phase ] ?? $match->phase ) . ' ' . $match->group_code . ' · ' . qm2026_format_site_datetime( $match->match_datetime, get_option( 'date_format' ) ) ) . '</h3>';
 		}
 		$prediction = $predictions[ (int) $match->id ] ?? null;
 		$locked     = qm2026_match_is_locked( $match, $rules );
@@ -22,7 +22,7 @@ $phase_labels = qm2026_phases();
 			<input type="hidden" name="match_id" value="<?php echo esc_attr( $match->id ); ?>">
 			<div class="qm2026-match-head">
 				<strong><?php echo esc_html( ( $match->home_name ?: $match->home_placeholder ?: __( 'Por definir', QM2026_TEXT_DOMAIN ) ) . ' vs ' . ( $match->away_name ?: $match->away_placeholder ?: __( 'Por definir', QM2026_TEXT_DOMAIN ) ) ); ?></strong>
-				<span><?php echo esc_html( date_i18n( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), strtotime( $match->match_datetime ) ) ); ?></span>
+				<span><?php echo esc_html( qm2026_format_site_datetime( $match->match_datetime, get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) ) ); ?></span>
 			</div>
 			<div class="qm2026-score-row">
 				<label>
