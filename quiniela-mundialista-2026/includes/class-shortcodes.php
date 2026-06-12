@@ -28,9 +28,15 @@ class QM2026_Shortcodes {
 
 	public function landing(): string {
 		global $wpdb;
-		$participant = qm2026_current_participant();
+		$participant  = qm2026_current_participant();
+		$is_logged_in = is_user_logged_in();
+		$default_name = '';
+		if ( $is_logged_in ) {
+			$current_user = wp_get_current_user();
+			$default_name = $current_user instanceof WP_User ? (string) $current_user->first_name : '';
+		}
 		$pools = $wpdb->get_results( 'SELECT id,name,description,access_code FROM ' . qm2026_table( 'pools' ) . " WHERE status='open' AND allow_public=1 ORDER BY name" );
-		return $this->render( 'landing', compact( 'participant', 'pools' ) );
+		return $this->render( 'landing', compact( 'participant', 'pools', 'is_logged_in', 'default_name' ) );
 	}
 
 	public function predictions(): string {
