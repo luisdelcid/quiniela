@@ -17,18 +17,25 @@ class QM2026_Ajax {
 		if ( ! QM2026_Security::rate_limit( 'join_pool' ) ) {
 			wp_send_json_error( __( 'Demasiados intentos. Intenta más tarde.', QM2026_TEXT_DOMAIN ), 429 );
 		}
-		$name  = sanitize_text_field( wp_unslash( $_POST['name'] ?? '' ) );
-		$email = sanitize_email( wp_unslash( $_POST['email'] ?? '' ) );
-		$code  = sanitize_text_field( wp_unslash( $_POST['code'] ?? '' ) );
-		$pool  = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM ' . qm2026_table( 'pools' ) . ' WHERE access_code=%s AND status=%s', $code, 'open' ) );
+		$name            = sanitize_text_field( wp_unslash( $_POST['name'] ?? '' ) );
+		$current_user_id = get_current_user_id();
+		$current_user    = $current_user_id ? wp_get_current_user() : null;
+		$email           = $current_user instanceof WP_User ? sanitize_email( $current_user->user_email ) : sanitize_email( wp_unslash( $_POST['email'] ?? '' ) );
+		$code            = sanitize_text_field( wp_unslash( $_POST['code'] ?? '' ) );
+		$pool            = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM ' . qm2026_table( 'pools' ) . ' WHERE access_code=%s AND status=%s', $code, 'open' ) );
 		if ( ! $pool || ! is_email( $email ) || '' === $name ) {
 			wp_send_json_error( __( 'Datos inválidos o código incorrecto.', QM2026_TEXT_DOMAIN ), 400 );
 		}
+		if ( $current_user_id && '' === trim( (string) get_user_meta( $current_user_id, 'first_name', true ) ) ) {
+			update_user_meta( $current_user_id, 'first_name', $name );
+		}
 		$existing = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM ' . qm2026_table( 'participants' ) . ' WHERE pool_id=%d AND email=%s', $pool->id, $email ) );
-		$token = $existing ? $existing->token : wp_generate_password( 40, false, false );
+		$token    = $existing ? $existing->token : wp_generate_password( 40, false, false );
 		if ( ! $existing ) {
-			$wpdb->insert( qm2026_table( 'participants' ), array( 'pool_id' => $pool->id, 'user_id' => get_current_user_id() ?: null, 'name' => $name, 'email' => $email, 'token' => $token, 'active' => 1, 'created_at' => current_time( 'mysql' ), 'updated_at' => current_time( 'mysql' ) ), array( '%d', '%d', '%s', '%s', '%s', '%d', '%s', '%s' ) );
+			$wpdb->insert( qm2026_table( 'participants' ), array( 'pool_id' => $pool->id, 'user_id' => $current_user_id ?: null, 'name' => $name, 'email' => $email, 'token' => $token, 'active' => 1, 'created_at' => current_time( 'mysql' ), 'updated_at' => current_time( 'mysql' ) ), array( '%d', '%d', '%s', '%s', '%s', '%d', '%s', '%s' ) );
 			qm2026_log( 'participant_created', __( 'Participante creado', QM2026_TEXT_DOMAIN ), array( 'pool_id' => $pool->id ) );
+		} elseif ( $current_user_id && empty( $existing->user_id ) ) {
+			$wpdb->update( qm2026_table( 'participants' ), array( 'user_id' => $current_user_id, 'updated_at' => current_time( 'mysql' ) ), array( 'id' => $existing->id ), array( '%d', '%s' ), array( '%d' ) );
 		}
 		setcookie( 'qm2026_token', $token, time() + YEAR_IN_SECONDS, COOKIEPATH ?: '/', COOKIE_DOMAIN, is_ssl(), true );
 		wp_send_json_success( array( 'message' => __( 'Ingreso correcto. Recargando...', QM2026_TEXT_DOMAIN ) ) );
