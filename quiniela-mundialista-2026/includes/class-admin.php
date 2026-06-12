@@ -47,6 +47,10 @@ class QM2026_Admin {
 		$action = sanitize_key( wp_unslash( $_POST['qm2026_action'] ) );
 		if ( 'save_pool' === $action ) {
 			$this->save_pool();
+		} elseif ( 'delete_pool' === $action ) {
+			$this->delete_pool();
+		} elseif ( 'delete_participant' === $action ) {
+			$this->delete_participant();
 		} elseif ( 'save_match' === $action || 'save_result' === $action ) {
 			$this->save_match();
 		} elseif ( 'save_settings' === $action ) {
@@ -85,6 +89,40 @@ class QM2026_Admin {
 			$wpdb->insert( qm2026_table( 'pools' ), $row );
 		}
 		wp_safe_redirect( admin_url( 'admin.php?page=qm2026-pools&qm2026_notice=' . rawurlencode( __( 'Quiniela guardada.', QM2026_TEXT_DOMAIN ) ) ) );
+		exit;
+	}
+
+
+	private function delete_pool(): void {
+		global $wpdb;
+		$id = absint( $_POST['id'] ?? 0 );
+		if ( $id ) {
+			$participant_ids = $wpdb->get_col( $wpdb->prepare( 'SELECT id FROM ' . qm2026_table( 'participants' ) . ' WHERE pool_id=%d', $id ) );
+			if ( ! empty( $participant_ids ) ) {
+				$placeholders = implode( ',', array_fill( 0, count( $participant_ids ), '%d' ) );
+				$wpdb->query( $wpdb->prepare( 'DELETE FROM ' . qm2026_table( 'predictions' ) . ' WHERE participant_id IN (' . $placeholders . ')', array_map( 'absint', $participant_ids ) ) );
+				$wpdb->query( $wpdb->prepare( 'DELETE FROM ' . qm2026_table( 'scores' ) . ' WHERE participant_id IN (' . $placeholders . ')', array_map( 'absint', $participant_ids ) ) );
+			}
+			$wpdb->delete( qm2026_table( 'predictions' ), array( 'pool_id' => $id ), array( '%d' ) );
+			$wpdb->delete( qm2026_table( 'scores' ), array( 'pool_id' => $id ), array( '%d' ) );
+			$wpdb->delete( qm2026_table( 'participants' ), array( 'pool_id' => $id ), array( '%d' ) );
+			$wpdb->delete( qm2026_table( 'pools' ), array( 'id' => $id ), array( '%d' ) );
+			qm2026_log( 'pool_deleted', __( 'Quiniela eliminada', QM2026_TEXT_DOMAIN ), array( 'pool_id' => $id ) );
+		}
+		wp_safe_redirect( admin_url( 'admin.php?page=qm2026-pools&qm2026_notice=' . rawurlencode( __( 'Quiniela eliminada.', QM2026_TEXT_DOMAIN ) ) ) );
+		exit;
+	}
+
+	private function delete_participant(): void {
+		global $wpdb;
+		$id = absint( $_POST['id'] ?? 0 );
+		if ( $id ) {
+			$wpdb->delete( qm2026_table( 'predictions' ), array( 'participant_id' => $id ), array( '%d' ) );
+			$wpdb->delete( qm2026_table( 'scores' ), array( 'participant_id' => $id ), array( '%d' ) );
+			$wpdb->delete( qm2026_table( 'participants' ), array( 'id' => $id ), array( '%d' ) );
+			qm2026_log( 'participant_deleted', __( 'Participante eliminado', QM2026_TEXT_DOMAIN ), array( 'participant_id' => $id ) );
+		}
+		wp_safe_redirect( admin_url( 'admin.php?page=qm2026-participants&qm2026_notice=' . rawurlencode( __( 'Participante eliminado.', QM2026_TEXT_DOMAIN ) ) ) );
 		exit;
 	}
 
