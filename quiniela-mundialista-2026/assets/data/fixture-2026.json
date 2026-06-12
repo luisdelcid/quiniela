@@ -5,7 +5,7 @@
     "group": "A",
     "home_code": "MEX",
     "away_code": "RSA",
-    "datetime": "2026-06-11 15:00:00",
+    "datetime": "2026-06-11 13:00:00",
     "stadium": "Estadio Ciudad de México",
     "city": "Ciudad de México",
     "status": "scheduled"
@@ -16,7 +16,7 @@
     "group": "A",
     "home_code": "KOR",
     "away_code": "CZE",
-    "datetime": "2026-06-11 22:00:00",
+    "datetime": "2026-06-11 20:00:00",
     "stadium": "Estadio Guadalajara",
     "city": "Guadalajara",
     "status": "scheduled"
@@ -27,7 +27,7 @@
     "group": "B",
     "home_code": "CAN",
     "away_code": "BIH",
-    "datetime": "2026-06-12 15:00:00",
+    "datetime": "2026-06-12 13:00:00",
     "stadium": "Estadio Toronto",
     "city": "Toronto",
     "status": "scheduled"
@@ -38,7 +38,7 @@
     "group": "D",
     "home_code": "USA",
     "away_code": "PAR",
-    "datetime": "2026-06-12 21:00:00",
+    "datetime": "2026-06-12 19:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
     "status": "scheduled"
@@ -49,7 +49,7 @@
     "group": "B",
     "home_code": "QAT",
     "away_code": "SUI",
-    "datetime": "2026-06-13 15:00:00",
+    "datetime": "2026-06-13 13:00:00",
     "stadium": "Estadio Bahía de San Francisco",
     "city": "Bahía de San Francisco",
     "status": "scheduled"
@@ -60,7 +60,7 @@
     "group": "C",
     "home_code": "BRA",
     "away_code": "MAR",
-    "datetime": "2026-06-13 18:00:00",
+    "datetime": "2026-06-13 16:00:00",
     "stadium": "Estadio Nueva York Nueva Jersey",
     "city": "Nueva York/Nueva Jersey",
     "status": "scheduled"
@@ -71,7 +71,7 @@
     "group": "C",
     "home_code": "HAI",
     "away_code": "SCO",
-    "datetime": "2026-06-13 21:00:00",
+    "datetime": "2026-06-13 19:00:00",
     "stadium": "Estadio Boston",
     "city": "Boston",
     "status": "scheduled"
@@ -82,7 +82,7 @@
     "group": "D",
     "home_code": "AUS",
     "away_code": "TUR",
-    "datetime": "2026-06-14 00:00:00",
+    "datetime": "2026-06-13 22:00:00",
     "stadium": "Estadio BC Place Vancouver",
     "city": "Vancouver",
     "status": "scheduled"
@@ -93,7 +93,7 @@
     "group": "E",
     "home_code": "GER",
     "away_code": "CUW",
-    "datetime": "2026-06-14 13:00:00",
+    "datetime": "2026-06-14 11:00:00",
     "stadium": "Estadio Houston",
     "city": "Houston",
     "status": "scheduled"
@@ -104,7 +104,7 @@
     "group": "F",
     "home_code": "NED",
     "away_code": "JPN",
-    "datetime": "2026-06-14 16:00:00",
+    "datetime": "2026-06-14 14:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
     "status": "scheduled"
@@ -115,7 +115,7 @@
     "group": "E",
     "home_code": "CIV",
     "away_code": "ECU",
-    "datetime": "2026-06-14 19:00:00",
+    "datetime": "2026-06-14 17:00:00",
     "stadium": "Estadio Filadelfia",
     "city": "Filadelfia",
     "status": "scheduled"
@@ -126,7 +126,7 @@
     "group": "F",
     "home_code": "SWE",
     "away_code": "TUN",
-    "datetime": "2026-06-14 22:00:00",
+    "datetime": "2026-06-14 20:00:00",
     "stadium": "Estadio Monterrey",
     "city": "Monterrey",
     "status": "scheduled"
@@ -137,7 +137,7 @@
     "group": "H",
     "home_code": "ESP",
     "away_code": "CPV",
-    "datetime": "2026-06-15 12:00:00",
+    "datetime": "2026-06-15 10:00:00",
     "stadium": "Estadio Atlanta",
     "city": "Atlanta",
     "status": "scheduled"
@@ -148,7 +148,7 @@
     "group": "G",
     "home_code": "BEL",
     "away_code": "EGY",
-    "datetime": "2026-06-15 15:00:00",
+    "datetime": "2026-06-15 13:00:00",
     "stadium": "Estadio Seattle",
     "city": "Seattle",
     "status": "scheduled"
@@ -159,7 +159,7 @@
     "group": "H",
     "home_code": "KSA",
     "away_code": "URU",
-    "datetime": "2026-06-15 18:00:00",
+    "datetime": "2026-06-15 16:00:00",
     "stadium": "Estadio Miami",
     "city": "Miami",
     "status": "scheduled"
@@ -170,7 +170,7 @@
     "group": "G",
     "home_code": "IRN",
     "away_code": "NZL",
-    "datetime": "2026-06-15 21:00:00",
+    "datetime": "2026-06-15 19:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
     "status": "scheduled"
@@ -181,7 +181,7 @@
     "group": "I",
     "home_code": "FRA",
     "away_code": "SEN",
-    "datetime": "2026-06-16 15:00:00",
+    "datetime": "2026-06-16 13:00:00",
     "stadium": "Estadio Nueva York Nueva Jersey",
     "city": "Nueva York/Nueva Jersey",
     "status": "scheduled"
@@ -192,7 +192,7 @@
     "group": "I",
     "home_code": "IRQ",
     "away_code": "NOR",
-    "datetime": "2026-06-16 18:00:00",
+    "datetime": "2026-06-16 16:00:00",
     "stadium": "Estadio Boston",
     "city": "Boston",
     "status": "scheduled"
@@ -203,7 +203,7 @@
     "group": "J",
     "home_code": "ARG",
     "away_code": "ALG",
-    "datetime": "2026-06-16 21:00:00",
+    "datetime": "2026-06-16 19:00:00",
     "stadium": "Estadio Kansas City",
     "city": "Kansas City",
     "status": "scheduled"
@@ -214,7 +214,7 @@
     "group": "J",
     "home_code": "AUT",
     "away_code": "JOR",
-    "datetime": "2026-06-17 00:00:00",
+    "datetime": "2026-06-16 22:00:00",
     "stadium": "Estadio Bahía de San Francisco",
     "city": "Bahía de San Francisco",
     "status": "scheduled"
@@ -225,7 +225,7 @@
     "group": "K",
     "home_code": "POR",
     "away_code": "COD",
-    "datetime": "2026-06-17 13:00:00",
+    "datetime": "2026-06-17 11:00:00",
     "stadium": "Estadio Houston",
     "city": "Houston",
     "status": "scheduled"
@@ -236,7 +236,7 @@
     "group": "L",
     "home_code": "ENG",
     "away_code": "CRO",
-    "datetime": "2026-06-17 16:00:00",
+    "datetime": "2026-06-17 14:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
     "status": "scheduled"
@@ -247,7 +247,7 @@
     "group": "L",
     "home_code": "GHA",
     "away_code": "PAN",
-    "datetime": "2026-06-17 19:00:00",
+    "datetime": "2026-06-17 17:00:00",
     "stadium": "Estadio Toronto",
     "city": "Toronto",
     "status": "scheduled"
@@ -258,7 +258,7 @@
     "group": "K",
     "home_code": "UZB",
     "away_code": "COL",
-    "datetime": "2026-06-17 22:00:00",
+    "datetime": "2026-06-17 20:00:00",
     "stadium": "Estadio Ciudad de México",
     "city": "Ciudad de México",
     "status": "scheduled"
@@ -269,7 +269,7 @@
     "group": "A",
     "home_code": "CZE",
     "away_code": "RSA",
-    "datetime": "2026-06-18 12:00:00",
+    "datetime": "2026-06-18 10:00:00",
     "stadium": "Estadio Atlanta",
     "city": "Atlanta",
     "status": "scheduled"
@@ -280,7 +280,7 @@
     "group": "B",
     "home_code": "SUI",
     "away_code": "BIH",
-    "datetime": "2026-06-18 15:00:00",
+    "datetime": "2026-06-18 13:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
     "status": "scheduled"
@@ -291,7 +291,7 @@
     "group": "B",
     "home_code": "CAN",
     "away_code": "QAT",
-    "datetime": "2026-06-18 18:00:00",
+    "datetime": "2026-06-18 16:00:00",
     "stadium": "Estadio BC Place Vancouver",
     "city": "Vancouver",
     "status": "scheduled"
@@ -302,7 +302,7 @@
     "group": "A",
     "home_code": "MEX",
     "away_code": "KOR",
-    "datetime": "2026-06-18 21:00:00",
+    "datetime": "2026-06-18 19:00:00",
     "stadium": "Estadio Guadalajara",
     "city": "Guadalajara",
     "status": "scheduled"
@@ -313,7 +313,7 @@
     "group": "D",
     "home_code": "USA",
     "away_code": "AUS",
-    "datetime": "2026-06-19 15:00:00",
+    "datetime": "2026-06-19 13:00:00",
     "stadium": "Estadio Seattle",
     "city": "Seattle",
     "status": "scheduled"
@@ -324,7 +324,7 @@
     "group": "C",
     "home_code": "SCO",
     "away_code": "MAR",
-    "datetime": "2026-06-19 18:00:00",
+    "datetime": "2026-06-19 16:00:00",
     "stadium": "Estadio Boston",
     "city": "Boston",
     "status": "scheduled"
@@ -335,7 +335,7 @@
     "group": "C",
     "home_code": "BRA",
     "away_code": "HAI",
-    "datetime": "2026-06-19 21:00:00",
+    "datetime": "2026-06-19 19:00:00",
     "stadium": "Estadio Filadelfia",
     "city": "Filadelfia",
     "status": "scheduled"
@@ -346,7 +346,7 @@
     "group": "D",
     "home_code": "TUR",
     "away_code": "PAR",
-    "datetime": "2026-06-20 00:00:00",
+    "datetime": "2026-06-19 22:00:00",
     "stadium": "Estadio Bahía de San Francisco",
     "city": "Bahía de San Francisco",
     "status": "scheduled"
@@ -357,7 +357,7 @@
     "group": "F",
     "home_code": "NED",
     "away_code": "SWE",
-    "datetime": "2026-06-20 13:00:00",
+    "datetime": "2026-06-20 11:00:00",
     "stadium": "Estadio Houston",
     "city": "Houston",
     "status": "scheduled"
@@ -368,7 +368,7 @@
     "group": "E",
     "home_code": "GER",
     "away_code": "CIV",
-    "datetime": "2026-06-20 16:00:00",
+    "datetime": "2026-06-20 14:00:00",
     "stadium": "Estadio Toronto",
     "city": "Toronto",
     "status": "scheduled"
@@ -379,7 +379,7 @@
     "group": "E",
     "home_code": "ECU",
     "away_code": "CUW",
-    "datetime": "2026-06-20 22:00:00",
+    "datetime": "2026-06-20 20:00:00",
     "stadium": "Estadio Kansas City",
     "city": "Kansas City",
     "status": "scheduled"
@@ -390,7 +390,7 @@
     "group": "F",
     "home_code": "TUN",
     "away_code": "JPN",
-    "datetime": "2026-06-21 00:00:00",
+    "datetime": "2026-06-20 22:00:00",
     "stadium": "Estadio Monterrey",
     "city": "Monterrey",
     "status": "scheduled"
@@ -401,7 +401,7 @@
     "group": "H",
     "home_code": "ESP",
     "away_code": "KSA",
-    "datetime": "2026-06-21 12:00:00",
+    "datetime": "2026-06-21 10:00:00",
     "stadium": "Estadio Atlanta",
     "city": "Atlanta",
     "status": "scheduled"
@@ -412,7 +412,7 @@
     "group": "G",
     "home_code": "BEL",
     "away_code": "IRN",
-    "datetime": "2026-06-21 15:00:00",
+    "datetime": "2026-06-21 13:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
     "status": "scheduled"
@@ -423,7 +423,7 @@
     "group": "H",
     "home_code": "URU",
     "away_code": "CPV",
-    "datetime": "2026-06-21 18:00:00",
+    "datetime": "2026-06-21 16:00:00",
     "stadium": "Estadio Miami",
     "city": "Miami",
     "status": "scheduled"
@@ -434,7 +434,7 @@
     "group": "G",
     "home_code": "NZL",
     "away_code": "EGY",
-    "datetime": "2026-06-21 21:00:00",
+    "datetime": "2026-06-21 19:00:00",
     "stadium": "Estadio BC Place Vancouver",
     "city": "Vancouver",
     "status": "scheduled"
@@ -445,7 +445,7 @@
     "group": "J",
     "home_code": "ARG",
     "away_code": "AUT",
-    "datetime": "2026-06-22 13:00:00",
+    "datetime": "2026-06-22 11:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
     "status": "scheduled"
@@ -456,7 +456,7 @@
     "group": "I",
     "home_code": "FRA",
     "away_code": "IRQ",
-    "datetime": "2026-06-22 17:00:00",
+    "datetime": "2026-06-22 15:00:00",
     "stadium": "Estadio Filadelfia",
     "city": "Filadelfia",
     "status": "scheduled"
@@ -467,7 +467,7 @@
     "group": "I",
     "home_code": "NOR",
     "away_code": "SEN",
-    "datetime": "2026-06-22 20:00:00",
+    "datetime": "2026-06-22 18:00:00",
     "stadium": "Estadio Nueva York Nueva Jersey",
     "city": "Nueva York/Nueva Jersey",
     "status": "scheduled"
@@ -478,7 +478,7 @@
     "group": "J",
     "home_code": "JOR",
     "away_code": "ALG",
-    "datetime": "2026-06-22 23:00:00",
+    "datetime": "2026-06-22 21:00:00",
     "stadium": "Estadio Bahía de San Francisco",
     "city": "Bahía de San Francisco",
     "status": "scheduled"
@@ -489,7 +489,7 @@
     "group": "K",
     "home_code": "POR",
     "away_code": "UZB",
-    "datetime": "2026-06-23 13:00:00",
+    "datetime": "2026-06-23 11:00:00",
     "stadium": "Estadio Houston",
     "city": "Houston",
     "status": "scheduled"
@@ -500,7 +500,7 @@
     "group": "L",
     "home_code": "ENG",
     "away_code": "GHA",
-    "datetime": "2026-06-23 16:00:00",
+    "datetime": "2026-06-23 14:00:00",
     "stadium": "Estadio Boston",
     "city": "Boston",
     "status": "scheduled"
@@ -511,7 +511,7 @@
     "group": "L",
     "home_code": "PAN",
     "away_code": "CRO",
-    "datetime": "2026-06-23 19:00:00",
+    "datetime": "2026-06-23 17:00:00",
     "stadium": "Estadio Toronto",
     "city": "Toronto",
     "status": "scheduled"
@@ -522,7 +522,7 @@
     "group": "K",
     "home_code": "COL",
     "away_code": "COD",
-    "datetime": "2026-06-23 22:00:00",
+    "datetime": "2026-06-23 20:00:00",
     "stadium": "Estadio Guadalajara",
     "city": "Guadalajara",
     "status": "scheduled"
@@ -533,7 +533,7 @@
     "group": "B",
     "home_code": "SUI",
     "away_code": "CAN",
-    "datetime": "2026-06-24 15:00:00",
+    "datetime": "2026-06-24 13:00:00",
     "stadium": "Estadio BC Place Vancouver",
     "city": "Vancouver",
     "status": "scheduled"
@@ -544,7 +544,7 @@
     "group": "B",
     "home_code": "BIH",
     "away_code": "QAT",
-    "datetime": "2026-06-24 15:00:00",
+    "datetime": "2026-06-24 13:00:00",
     "stadium": "Estadio Seattle",
     "city": "Seattle",
     "status": "scheduled"
@@ -555,7 +555,7 @@
     "group": "C",
     "home_code": "SCO",
     "away_code": "BRA",
-    "datetime": "2026-06-24 18:00:00",
+    "datetime": "2026-06-24 16:00:00",
     "stadium": "Estadio Miami",
     "city": "Miami",
     "status": "scheduled"
@@ -566,7 +566,7 @@
     "group": "C",
     "home_code": "MAR",
     "away_code": "HAI",
-    "datetime": "2026-06-24 18:00:00",
+    "datetime": "2026-06-24 16:00:00",
     "stadium": "Estadio Atlanta",
     "city": "Atlanta",
     "status": "scheduled"
@@ -577,7 +577,7 @@
     "group": "A",
     "home_code": "CZE",
     "away_code": "MEX",
-    "datetime": "2026-06-24 21:00:00",
+    "datetime": "2026-06-24 19:00:00",
     "stadium": "Estadio Ciudad de México",
     "city": "Ciudad de México",
     "status": "scheduled"
@@ -588,7 +588,7 @@
     "group": "A",
     "home_code": "RSA",
     "away_code": "KOR",
-    "datetime": "2026-06-24 21:00:00",
+    "datetime": "2026-06-24 19:00:00",
     "stadium": "Estadio Monterrey",
     "city": "Monterrey",
     "status": "scheduled"
@@ -599,7 +599,7 @@
     "group": "E",
     "home_code": "CUW",
     "away_code": "CIV",
-    "datetime": "2026-06-25 16:00:00",
+    "datetime": "2026-06-25 14:00:00",
     "stadium": "Estadio Filadelfia",
     "city": "Filadelfia",
     "status": "scheduled"
@@ -610,7 +610,7 @@
     "group": "E",
     "home_code": "ECU",
     "away_code": "GER",
-    "datetime": "2026-06-25 16:00:00",
+    "datetime": "2026-06-25 14:00:00",
     "stadium": "Estadio Nueva York Nueva Jersey",
     "city": "Nueva York/Nueva Jersey",
     "status": "scheduled"
@@ -621,7 +621,7 @@
     "group": "F",
     "home_code": "JPN",
     "away_code": "SWE",
-    "datetime": "2026-06-25 19:00:00",
+    "datetime": "2026-06-25 17:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
     "status": "scheduled"
@@ -632,7 +632,7 @@
     "group": "F",
     "home_code": "TUN",
     "away_code": "NED",
-    "datetime": "2026-06-25 19:00:00",
+    "datetime": "2026-06-25 17:00:00",
     "stadium": "Estadio Kansas City",
     "city": "Kansas City",
     "status": "scheduled"
@@ -643,7 +643,7 @@
     "group": "D",
     "home_code": "TUR",
     "away_code": "USA",
-    "datetime": "2026-06-25 22:00:00",
+    "datetime": "2026-06-25 20:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
     "status": "scheduled"
@@ -654,7 +654,7 @@
     "group": "D",
     "home_code": "PAR",
     "away_code": "AUS",
-    "datetime": "2026-06-25 22:00:00",
+    "datetime": "2026-06-25 20:00:00",
     "stadium": "Estadio Bahía de San Francisco",
     "city": "Bahía de San Francisco",
     "status": "scheduled"
@@ -665,7 +665,7 @@
     "group": "I",
     "home_code": "NOR",
     "away_code": "FRA",
-    "datetime": "2026-06-26 15:00:00",
+    "datetime": "2026-06-26 13:00:00",
     "stadium": "Estadio Boston",
     "city": "Boston",
     "status": "scheduled"
@@ -676,7 +676,7 @@
     "group": "I",
     "home_code": "SEN",
     "away_code": "IRQ",
-    "datetime": "2026-06-26 15:00:00",
+    "datetime": "2026-06-26 13:00:00",
     "stadium": "Estadio Toronto",
     "city": "Toronto",
     "status": "scheduled"
@@ -687,7 +687,7 @@
     "group": "H",
     "home_code": "CPV",
     "away_code": "KSA",
-    "datetime": "2026-06-26 20:00:00",
+    "datetime": "2026-06-26 18:00:00",
     "stadium": "Estadio Houston",
     "city": "Houston",
     "status": "scheduled"
@@ -698,7 +698,7 @@
     "group": "H",
     "home_code": "URU",
     "away_code": "ESP",
-    "datetime": "2026-06-26 20:00:00",
+    "datetime": "2026-06-26 18:00:00",
     "stadium": "Estadio Guadalajara",
     "city": "Guadalajara",
     "status": "scheduled"
@@ -709,7 +709,7 @@
     "group": "G",
     "home_code": "EGY",
     "away_code": "IRN",
-    "datetime": "2026-06-26 23:00:00",
+    "datetime": "2026-06-26 21:00:00",
     "stadium": "Estadio Seattle",
     "city": "Seattle",
     "status": "scheduled"
@@ -720,7 +720,7 @@
     "group": "G",
     "home_code": "NZL",
     "away_code": "BEL",
-    "datetime": "2026-06-26 23:00:00",
+    "datetime": "2026-06-26 21:00:00",
     "stadium": "Estadio BC Place Vancouver",
     "city": "Vancouver",
     "status": "scheduled"
@@ -731,7 +731,7 @@
     "group": "L",
     "home_code": "PAN",
     "away_code": "ENG",
-    "datetime": "2026-06-27 17:00:00",
+    "datetime": "2026-06-27 15:00:00",
     "stadium": "Estadio Nueva York Nueva Jersey",
     "city": "Nueva York/Nueva Jersey",
     "status": "scheduled"
@@ -742,7 +742,7 @@
     "group": "L",
     "home_code": "CRO",
     "away_code": "GHA",
-    "datetime": "2026-06-27 17:00:00",
+    "datetime": "2026-06-27 15:00:00",
     "stadium": "Estadio Filadelfia",
     "city": "Filadelfia",
     "status": "scheduled"
@@ -753,7 +753,7 @@
     "group": "K",
     "home_code": "COL",
     "away_code": "POR",
-    "datetime": "2026-06-27 19:30:00",
+    "datetime": "2026-06-27 17:30:00",
     "stadium": "Estadio Miami",
     "city": "Miami",
     "status": "scheduled"
@@ -764,7 +764,7 @@
     "group": "K",
     "home_code": "COD",
     "away_code": "UZB",
-    "datetime": "2026-06-27 19:30:00",
+    "datetime": "2026-06-27 17:30:00",
     "stadium": "Estadio Atlanta",
     "city": "Atlanta",
     "status": "scheduled"
@@ -775,7 +775,7 @@
     "group": "J",
     "home_code": "ALG",
     "away_code": "AUT",
-    "datetime": "2026-06-27 22:00:00",
+    "datetime": "2026-06-27 20:00:00",
     "stadium": "Estadio Kansas City",
     "city": "Kansas City",
     "status": "scheduled"
@@ -786,7 +786,7 @@
     "group": "J",
     "home_code": "JOR",
     "away_code": "ARG",
-    "datetime": "2026-06-27 22:00:00",
+    "datetime": "2026-06-27 20:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
     "status": "scheduled"
@@ -797,7 +797,7 @@
     "group": "",
     "home_placeholder": "2º Grupo A",
     "away_placeholder": "2º Grupo B",
-    "datetime": "2026-06-28 15:00:00",
+    "datetime": "2026-06-28 13:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
     "status": "scheduled"
@@ -808,7 +808,7 @@
     "group": "",
     "home_placeholder": "1º Grupo E",
     "away_placeholder": "3º Grupo A/B/C/D/F",
-    "datetime": "2026-06-29 16:30:00",
+    "datetime": "2026-06-29 14:30:00",
     "stadium": "Estadio Boston",
     "city": "Boston",
     "status": "scheduled"
@@ -819,7 +819,7 @@
     "group": "",
     "home_placeholder": "1º Grupo F",
     "away_placeholder": "2º Grupo C",
-    "datetime": "2026-06-29 21:00:00",
+    "datetime": "2026-06-29 19:00:00",
     "stadium": "Estadio Monterrey",
     "city": "Monterrey",
     "status": "scheduled"
@@ -830,7 +830,7 @@
     "group": "",
     "home_placeholder": "1º Grupo C",
     "away_placeholder": "2º Grupo F",
-    "datetime": "2026-06-29 13:00:00",
+    "datetime": "2026-06-29 11:00:00",
     "stadium": "Estadio Houston",
     "city": "Houston",
     "status": "scheduled"
@@ -841,7 +841,7 @@
     "group": "",
     "home_placeholder": "1º Grupo I",
     "away_placeholder": "3º Grupo C/D/F/G/H",
-    "datetime": "2026-06-30 17:00:00",
+    "datetime": "2026-06-30 15:00:00",
     "stadium": "Estadio Nueva York Nueva Jersey",
     "city": "Nueva York/Nueva Jersey",
     "status": "scheduled"
@@ -852,7 +852,7 @@
     "group": "",
     "home_placeholder": "2º Grupo E",
     "away_placeholder": "2º Grupo I",
-    "datetime": "2026-06-30 13:00:00",
+    "datetime": "2026-06-30 11:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
     "status": "scheduled"
@@ -863,7 +863,7 @@
     "group": "",
     "home_placeholder": "1º Grupo A",
     "away_placeholder": "3º Grupo C/E/F/H/I",
-    "datetime": "2026-06-30 21:00:00",
+    "datetime": "2026-06-30 19:00:00",
     "stadium": "Estadio Ciudad de México",
     "city": "Ciudad de México",
     "status": "scheduled"
@@ -874,7 +874,7 @@
     "group": "",
     "home_placeholder": "1º Grupo L",
     "away_placeholder": "3º Grupo E/H/I/J/K",
-    "datetime": "2026-07-01 12:00:00",
+    "datetime": "2026-07-01 10:00:00",
     "stadium": "Estadio Atlanta",
     "city": "Atlanta",
     "status": "scheduled"
@@ -885,7 +885,7 @@
     "group": "",
     "home_placeholder": "1º Grupo D",
     "away_placeholder": "3º Grupo B/E/F/I/J",
-    "datetime": "2026-07-01 20:00:00",
+    "datetime": "2026-07-01 18:00:00",
     "stadium": "Estadio Bahía de San Francisco",
     "city": "Bahía de San Francisco",
     "status": "scheduled"
@@ -896,7 +896,7 @@
     "group": "",
     "home_placeholder": "1º Grupo G",
     "away_placeholder": "3º Grupo A/E/H/I/J",
-    "datetime": "2026-07-01 16:00:00",
+    "datetime": "2026-07-01 14:00:00",
     "stadium": "Estadio Seattle",
     "city": "Seattle",
     "status": "scheduled"
@@ -907,7 +907,7 @@
     "group": "",
     "home_placeholder": "2º Grupo K",
     "away_placeholder": "2º Grupo L",
-    "datetime": "2026-07-02 19:00:00",
+    "datetime": "2026-07-02 17:00:00",
     "stadium": "Estadio Toronto",
     "city": "Toronto",
     "status": "scheduled"
@@ -918,7 +918,7 @@
     "group": "",
     "home_placeholder": "1º Grupo H",
     "away_placeholder": "2º Grupo J",
-    "datetime": "2026-07-02 15:00:00",
+    "datetime": "2026-07-02 13:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
     "status": "scheduled"
@@ -929,7 +929,7 @@
     "group": "",
     "home_placeholder": "1º Grupo B",
     "away_placeholder": "3º Grupo E/F/G/I/J",
-    "datetime": "2026-07-02 23:00:00",
+    "datetime": "2026-07-02 21:00:00",
     "stadium": "Estadio BC Place Vancouver",
     "city": "Vancouver",
     "status": "scheduled"
@@ -940,7 +940,7 @@
     "group": "",
     "home_placeholder": "1º Grupo J",
     "away_placeholder": "2º Grupo H",
-    "datetime": "2026-07-03 18:00:00",
+    "datetime": "2026-07-03 16:00:00",
     "stadium": "Estadio Miami",
     "city": "Miami",
     "status": "scheduled"
@@ -951,7 +951,7 @@
     "group": "",
     "home_placeholder": "1º Grupo K",
     "away_placeholder": "3º Grupo D/E/I/J/L",
-    "datetime": "2026-07-03 21:30:00",
+    "datetime": "2026-07-03 19:30:00",
     "stadium": "Estadio Kansas City",
     "city": "Kansas City",
     "status": "scheduled"
@@ -962,7 +962,7 @@
     "group": "",
     "home_placeholder": "2º Grupo D",
     "away_placeholder": "2º Grupo G",
-    "datetime": "2026-07-03 14:00:00",
+    "datetime": "2026-07-03 12:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
     "status": "scheduled"
@@ -973,7 +973,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 74",
     "away_placeholder": "Ganador Partido 77",
-    "datetime": "2026-07-04 17:00:00",
+    "datetime": "2026-07-04 15:00:00",
     "stadium": "Estadio Filadelfia",
     "city": "Filadelfia",
     "status": "scheduled"
@@ -984,7 +984,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 73",
     "away_placeholder": "Ganador Partido 75",
-    "datetime": "2026-07-04 13:00:00",
+    "datetime": "2026-07-04 11:00:00",
     "stadium": "Estadio Houston",
     "city": "Houston",
     "status": "scheduled"
@@ -995,7 +995,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 76",
     "away_placeholder": "Ganador Partido 78",
-    "datetime": "2026-07-05 16:00:00",
+    "datetime": "2026-07-05 14:00:00",
     "stadium": "Estadio Nueva York Nueva Jersey",
     "city": "Nueva York/Nueva Jersey",
     "status": "scheduled"
@@ -1006,7 +1006,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 79",
     "away_placeholder": "Ganador Partido 80",
-    "datetime": "2026-07-05 20:00:00",
+    "datetime": "2026-07-05 18:00:00",
     "stadium": "Estadio Ciudad de México",
     "city": "Ciudad de México",
     "status": "scheduled"
@@ -1017,7 +1017,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 83",
     "away_placeholder": "Ganador Partido 84",
-    "datetime": "2026-07-06 15:00:00",
+    "datetime": "2026-07-06 13:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
     "status": "scheduled"
@@ -1028,7 +1028,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 81",
     "away_placeholder": "Ganador Partido 82",
-    "datetime": "2026-07-06 20:00:00",
+    "datetime": "2026-07-06 18:00:00",
     "stadium": "Estadio Seattle",
     "city": "Seattle",
     "status": "scheduled"
@@ -1039,7 +1039,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 86",
     "away_placeholder": "Ganador Partido 88",
-    "datetime": "2026-07-07 12:00:00",
+    "datetime": "2026-07-07 10:00:00",
     "stadium": "Estadio Atlanta",
     "city": "Atlanta",
     "status": "scheduled"
@@ -1050,7 +1050,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 85",
     "away_placeholder": "Ganador Partido 87",
-    "datetime": "2026-07-07 16:00:00",
+    "datetime": "2026-07-07 14:00:00",
     "stadium": "Estadio BC Place Vancouver",
     "city": "Vancouver",
     "status": "scheduled"
@@ -1061,7 +1061,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 89",
     "away_placeholder": "Ganador Partido 90",
-    "datetime": "2026-07-09 16:00:00",
+    "datetime": "2026-07-09 14:00:00",
     "stadium": "Estadio Boston",
     "city": "Boston",
     "status": "scheduled"
@@ -1072,7 +1072,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 93",
     "away_placeholder": "Ganador Partido 94",
-    "datetime": "2026-07-10 15:00:00",
+    "datetime": "2026-07-10 13:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
     "status": "scheduled"
@@ -1083,7 +1083,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 91",
     "away_placeholder": "Ganador Partido 92",
-    "datetime": "2026-07-11 17:00:00",
+    "datetime": "2026-07-11 15:00:00",
     "stadium": "Estadio Miami",
     "city": "Miami",
     "status": "scheduled"
@@ -1094,7 +1094,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 95",
     "away_placeholder": "Ganador Partido 96",
-    "datetime": "2026-07-11 21:00:00",
+    "datetime": "2026-07-11 19:00:00",
     "stadium": "Estadio Kansas City",
     "city": "Kansas City",
     "status": "scheduled"
@@ -1105,7 +1105,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 97",
     "away_placeholder": "Ganador Partido 98",
-    "datetime": "2026-07-14 15:00:00",
+    "datetime": "2026-07-14 13:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
     "status": "scheduled"
@@ -1116,7 +1116,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 99",
     "away_placeholder": "Ganador Partido 100",
-    "datetime": "2026-07-15 15:00:00",
+    "datetime": "2026-07-15 13:00:00",
     "stadium": "Estadio Atlanta",
     "city": "Atlanta",
     "status": "scheduled"
@@ -1127,7 +1127,7 @@
     "group": "",
     "home_placeholder": "Perdedor Partido 101",
     "away_placeholder": "Perdedor Partido 102",
-    "datetime": "2026-07-18 17:00:00",
+    "datetime": "2026-07-18 15:00:00",
     "stadium": "Estadio Miami",
     "city": "Miami",
     "status": "scheduled"
@@ -1138,7 +1138,7 @@
     "group": "",
     "home_placeholder": "Ganador Partido 101",
     "away_placeholder": "Ganador Partido 102",
-    "datetime": "2026-07-19 15:00:00",
+    "datetime": "2026-07-19 13:00:00",
     "stadium": "Estadio Nueva York Nueva Jersey",
     "city": "Nueva York/Nueva Jersey",
     "status": "scheduled"
