@@ -1,9 +1,63 @@
-<?php if ( ! defined( 'ABSPATH' ) ) exit; global $wpdb; $edit_id=absint($_GET['edit']??0); $pool=$edit_id?$wpdb->get_row($wpdb->prepare('SELECT * FROM '.qm2026_table('pools').' WHERE id=%d',$edit_id)):null; $rules=$pool&&$pool->rules?json_decode($pool->rules,true):qm2026_default_rules(); ?>
-<div class="wrap qm2026"><h1><?php esc_html_e('Quinielas', QM2026_TEXT_DOMAIN); ?></h1><?php if(!empty($_GET['qm2026_notice'])) echo '<div class="notice notice-success"><p>'.esc_html(wp_unslash($_GET['qm2026_notice'])).'</p></div>'; ?>
-<form method="post" class="qm2026-card"><?php wp_nonce_field('qm2026_admin_action'); ?><input type="hidden" name="qm2026_action" value="save_pool"><input type="hidden" name="id" value="<?php echo esc_attr($edit_id); ?>">
-<h2><?php echo $pool?esc_html__('Editar quiniela',QM2026_TEXT_DOMAIN):esc_html__('Crear quiniela',QM2026_TEXT_DOMAIN); ?></h2><p><label><?php esc_html_e('Nombre',QM2026_TEXT_DOMAIN); ?><input class="regular-text" name="name" required value="<?php echo esc_attr($pool->name??''); ?>"></label></p>
-<p><label><?php esc_html_e('Descripción',QM2026_TEXT_DOMAIN); ?><textarea name="description" class="large-text"><?php echo esc_textarea($pool->description??''); ?></textarea></label></p>
-<p><label><?php esc_html_e('Código privado',QM2026_TEXT_DOMAIN); ?><input name="access_code" value="<?php echo esc_attr($pool->access_code??qm2026_generate_code()); ?>"></label> <label><?php esc_html_e('Estado',QM2026_TEXT_DOMAIN); ?><select name="status"><?php foreach(qm2026_pool_statuses() as $k=>$v) echo '<option value="'.esc_attr($k).'" '.selected($pool->status??'open',$k,false).'>'.esc_html($v).'</option>'; ?></select></label></p>
-<p><label><input type="checkbox" name="allow_public" value="1" <?php checked($pool->allow_public??1); ?>> <?php esc_html_e('Permitir registro público',QM2026_TEXT_DOMAIN); ?></label> <label><input type="checkbox" name="allow_guests" value="1" <?php checked($pool->allow_guests??1); ?>> <?php esc_html_e('Permitir invitados sin cuenta WordPress',QM2026_TEXT_DOMAIN); ?></label></p>
-<div class="qm2026-grid"><?php foreach(qm2026_default_rules() as $key=>$val): ?><label><?php echo esc_html($key); ?><input type="number" min="0" name="rules[<?php echo esc_attr($key); ?>]" value="<?php echo esc_attr($rules[$key]??$val); ?>"></label><?php endforeach; ?></div><p><button class="button button-primary"><?php esc_html_e('Guardar quiniela',QM2026_TEXT_DOMAIN); ?></button></p></form>
-<table class="widefat striped"><thead><tr><th>ID</th><th><?php esc_html_e('Nombre',QM2026_TEXT_DOMAIN); ?></th><th><?php esc_html_e('Código',QM2026_TEXT_DOMAIN); ?></th><th><?php esc_html_e('Estado',QM2026_TEXT_DOMAIN); ?></th><th></th></tr></thead><tbody><?php foreach($wpdb->get_results('SELECT * FROM '.qm2026_table('pools').' ORDER BY id DESC') as $p): ?><tr><td><?php echo esc_html($p->id); ?></td><td><?php echo esc_html($p->name); ?></td><td><code><?php echo esc_html($p->access_code); ?></code></td><td><?php echo esc_html($p->status); ?></td><td><a href="<?php echo esc_url(admin_url('admin.php?page=qm2026-pools&edit='.$p->id)); ?>"><?php esc_html_e('Editar',QM2026_TEXT_DOMAIN); ?></a></td></tr><?php endforeach; ?></tbody></table></div>
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+global $wpdb;
+$edit_id = absint( $_GET['edit'] ?? 0 );
+$pool    = $edit_id ? $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM ' . qm2026_table( 'pools' ) . ' WHERE id=%d', $edit_id ) ) : null;
+$rules   = $pool && $pool->rules ? json_decode( $pool->rules, true ) : qm2026_default_rules();
+$pools   = $wpdb->get_results( 'SELECT * FROM ' . qm2026_table( 'pools' ) . ' ORDER BY id DESC' );
+?>
+<div class="wrap qm2026">
+	<h1><?php esc_html_e( 'Quinielas', QM2026_TEXT_DOMAIN ); ?></h1>
+	<?php if ( ! empty( $_GET['qm2026_notice'] ) ) : ?>
+		<div class="notice notice-success"><p><?php echo esc_html( wp_unslash( $_GET['qm2026_notice'] ) ); ?></p></div>
+	<?php endif; ?>
+
+	<form method="post" class="qm2026-card">
+		<?php wp_nonce_field( 'qm2026_admin_action' ); ?>
+		<input type="hidden" name="qm2026_action" value="save_pool">
+		<input type="hidden" name="id" value="<?php echo esc_attr( $edit_id ); ?>">
+		<h2><?php echo $pool ? esc_html__( 'Editar quiniela', QM2026_TEXT_DOMAIN ) : esc_html__( 'Crear quiniela', QM2026_TEXT_DOMAIN ); ?></h2>
+		<p><label><?php esc_html_e( 'Nombre', QM2026_TEXT_DOMAIN ); ?><input class="regular-text" name="name" required value="<?php echo esc_attr( $pool->name ?? '' ); ?>"></label></p>
+		<p><label><?php esc_html_e( 'Descripción', QM2026_TEXT_DOMAIN ); ?><textarea name="description" class="large-text"><?php echo esc_textarea( $pool->description ?? '' ); ?></textarea></label></p>
+		<p>
+			<label><?php esc_html_e( 'Código privado', QM2026_TEXT_DOMAIN ); ?><input name="access_code" value="<?php echo esc_attr( $pool->access_code ?? qm2026_generate_code() ); ?>"></label>
+			<label><?php esc_html_e( 'Estado', QM2026_TEXT_DOMAIN ); ?><select name="status"><?php foreach ( qm2026_pool_statuses() as $k => $v ) echo '<option value="' . esc_attr( $k ) . '" ' . selected( $pool->status ?? 'open', $k, false ) . '>' . esc_html( $v ) . '</option>'; ?></select></label>
+		</p>
+		<p>
+			<label><input type="checkbox" name="allow_public" value="1" <?php checked( $pool->allow_public ?? 1 ); ?>> <?php esc_html_e( 'Permitir registro público', QM2026_TEXT_DOMAIN ); ?></label>
+			<label><input type="checkbox" name="allow_guests" value="1" <?php checked( $pool->allow_guests ?? 1 ); ?>> <?php esc_html_e( 'Permitir invitados sin cuenta WordPress', QM2026_TEXT_DOMAIN ); ?></label>
+		</p>
+		<div class="qm2026-grid">
+			<?php foreach ( qm2026_default_rules() as $key => $val ) : ?>
+				<label><?php echo esc_html( $key ); ?><input type="number" min="0" name="rules[<?php echo esc_attr( $key ); ?>]" value="<?php echo esc_attr( $rules[ $key ] ?? $val ); ?>"></label>
+			<?php endforeach; ?>
+		</div>
+		<p><button class="button button-primary"><?php esc_html_e( 'Guardar quiniela', QM2026_TEXT_DOMAIN ); ?></button></p>
+	</form>
+
+	<table class="widefat striped">
+		<thead><tr><th>ID</th><th><?php esc_html_e( 'Nombre', QM2026_TEXT_DOMAIN ); ?></th><th><?php esc_html_e( 'Código', QM2026_TEXT_DOMAIN ); ?></th><th><?php esc_html_e( 'Estado', QM2026_TEXT_DOMAIN ); ?></th><th><?php esc_html_e( 'Acciones', QM2026_TEXT_DOMAIN ); ?></th></tr></thead>
+		<tbody>
+			<?php foreach ( $pools as $p ) : ?>
+				<tr>
+					<td><?php echo esc_html( $p->id ); ?></td>
+					<td><?php echo esc_html( $p->name ); ?></td>
+					<td><code><?php echo esc_html( $p->access_code ); ?></code></td>
+					<td><?php echo esc_html( $p->status ); ?></td>
+					<td>
+						<a class="button button-small" href="<?php echo esc_url( admin_url( 'admin.php?page=qm2026-pools&edit=' . $p->id ) ); ?>"><?php esc_html_e( 'Editar', QM2026_TEXT_DOMAIN ); ?></a>
+						<form method="post" style="display:inline" onsubmit="return confirm('<?php echo esc_js( __( '¿Seguro que quieres eliminar esta quiniela? También se eliminarán sus participantes, predicciones y puntajes.', QM2026_TEXT_DOMAIN ) ); ?>');">
+							<?php wp_nonce_field( 'qm2026_admin_action' ); ?>
+							<input type="hidden" name="qm2026_action" value="delete_pool">
+							<input type="hidden" name="id" value="<?php echo esc_attr( $p->id ); ?>">
+							<button type="submit" class="button button-small button-link-delete"><?php esc_html_e( 'Eliminar', QM2026_TEXT_DOMAIN ); ?></button>
+						</form>
+					</td>
+				</tr>
+			<?php endforeach; ?>
+		</tbody>
+	</table>
+</div>
