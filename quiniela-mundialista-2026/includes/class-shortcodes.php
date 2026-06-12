@@ -48,7 +48,11 @@ class QM2026_Shortcodes {
 		$pool = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM ' . qm2026_table( 'pools' ) . ' WHERE id=%d', $participant->pool_id ) );
 		$rules = $pool && $pool->rules ? json_decode( $pool->rules, true ) : qm2026_default_rules();
 		$matches = $wpdb->get_results( 'SELECT m.*, ht.name home_name, at.name away_name FROM ' . qm2026_table( 'matches' ) . ' m LEFT JOIN ' . qm2026_table( 'teams' ) . ' ht ON ht.id=m.home_team_id LEFT JOIN ' . qm2026_table( 'teams' ) . ' at ON at.id=m.away_team_id ORDER BY m.match_datetime ASC, m.id ASC' );
-		$predictions = $wpdb->get_results( $wpdb->prepare( 'SELECT * FROM ' . qm2026_table( 'predictions' ) . ' WHERE participant_id=%d', $participant->id ), OBJECT_K );
+		$prediction_rows = $wpdb->get_results( $wpdb->prepare( 'SELECT * FROM ' . qm2026_table( 'predictions' ) . ' WHERE participant_id=%d', $participant->id ) );
+		$predictions     = array();
+		foreach ( $prediction_rows as $prediction_row ) {
+			$predictions[ (int) $prediction_row->match_id ] = $prediction_row;
+		}
 		return $this->render( 'predictions', compact( 'participant', 'pool', 'rules', 'matches', 'predictions' ) );
 	}
 
