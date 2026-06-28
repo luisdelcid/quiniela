@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'QM2026_VERSION', '1.0.0' );
-define( 'QM2026_FIXTURE_DATA_VERSION', '2026-06-11-official-fifa-schedule-guatemala-time' );
+define( 'QM2026_FIXTURE_DATA_VERSION', '2026-06-28-round-of-32-teams' );
 define( 'QM2026_FILE', __FILE__ );
 define( 'QM2026_PATH', plugin_dir_path( __FILE__ ) );
 define( 'QM2026_URL', plugin_dir_url( __FILE__ ) );
