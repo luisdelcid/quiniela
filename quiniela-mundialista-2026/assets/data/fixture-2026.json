@@ -795,177 +795,177 @@
     "fifa_match_no": 73,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "2º Grupo A",
-    "away_placeholder": "2º Grupo B",
     "datetime": "2026-06-28 13:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "RSA",
+    "away_code": "CAN"
   },
   {
     "fifa_match_no": 74,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo E",
-    "away_placeholder": "3º Grupo A/B/C/D/F",
     "datetime": "2026-06-29 14:30:00",
     "stadium": "Estadio Boston",
     "city": "Boston",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "GER",
+    "away_code": "PAR"
   },
   {
     "fifa_match_no": 75,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo F",
-    "away_placeholder": "2º Grupo C",
     "datetime": "2026-06-29 19:00:00",
     "stadium": "Estadio Monterrey",
     "city": "Monterrey",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "NED",
+    "away_code": "MAR"
   },
   {
     "fifa_match_no": 76,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo C",
-    "away_placeholder": "2º Grupo F",
     "datetime": "2026-06-29 11:00:00",
     "stadium": "Estadio Houston",
     "city": "Houston",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "BRA",
+    "away_code": "JPN"
   },
   {
     "fifa_match_no": 77,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo I",
-    "away_placeholder": "3º Grupo C/D/F/G/H",
     "datetime": "2026-06-30 15:00:00",
     "stadium": "Estadio Nueva York Nueva Jersey",
     "city": "Nueva York/Nueva Jersey",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "FRA",
+    "away_code": "SWE"
   },
   {
     "fifa_match_no": 78,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "2º Grupo E",
-    "away_placeholder": "2º Grupo I",
     "datetime": "2026-06-30 11:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "CIV",
+    "away_code": "NOR"
   },
   {
     "fifa_match_no": 79,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo A",
-    "away_placeholder": "3º Grupo C/E/F/H/I",
     "datetime": "2026-06-30 19:00:00",
     "stadium": "Estadio Ciudad de México",
     "city": "Ciudad de México",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "MEX",
+    "away_code": "ECU"
   },
   {
     "fifa_match_no": 80,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo L",
-    "away_placeholder": "3º Grupo E/H/I/J/K",
     "datetime": "2026-07-01 10:00:00",
     "stadium": "Estadio Atlanta",
     "city": "Atlanta",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "ENG",
+    "away_code": "COD"
   },
   {
     "fifa_match_no": 81,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo D",
-    "away_placeholder": "3º Grupo B/E/F/I/J",
     "datetime": "2026-07-01 18:00:00",
     "stadium": "Estadio Bahía de San Francisco",
     "city": "Bahía de San Francisco",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "USA",
+    "away_code": "BIH"
   },
   {
     "fifa_match_no": 82,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo G",
-    "away_placeholder": "3º Grupo A/E/H/I/J",
     "datetime": "2026-07-01 14:00:00",
     "stadium": "Estadio Seattle",
     "city": "Seattle",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "BEL",
+    "away_code": "SEN"
   },
   {
     "fifa_match_no": 83,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "2º Grupo K",
-    "away_placeholder": "2º Grupo L",
     "datetime": "2026-07-02 17:00:00",
     "stadium": "Estadio Toronto",
     "city": "Toronto",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "POR",
+    "away_code": "CRO"
   },
   {
     "fifa_match_no": 84,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo H",
-    "away_placeholder": "2º Grupo J",
     "datetime": "2026-07-02 13:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "ESP",
+    "away_code": "AUT"
   },
   {
     "fifa_match_no": 85,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo B",
-    "away_placeholder": "3º Grupo E/F/G/I/J",
     "datetime": "2026-07-02 21:00:00",
     "stadium": "Estadio BC Place Vancouver",
     "city": "Vancouver",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "SUI",
+    "away_code": "ALG"
   },
   {
     "fifa_match_no": 86,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo J",
-    "away_placeholder": "2º Grupo H",
     "datetime": "2026-07-03 16:00:00",
     "stadium": "Estadio Miami",
     "city": "Miami",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "ARG",
+    "away_code": "CPV"
   },
   {
     "fifa_match_no": 87,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "1º Grupo K",
-    "away_placeholder": "3º Grupo D/E/I/J/L",
     "datetime": "2026-07-03 19:30:00",
     "stadium": "Estadio Kansas City",
     "city": "Kansas City",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "COL",
+    "away_code": "GHA"
   },
   {
     "fifa_match_no": 88,
     "phase": "round_32",
     "group": "",
-    "home_placeholder": "2º Grupo D",
-    "away_placeholder": "2º Grupo G",
     "datetime": "2026-07-03 12:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "AUS",
+    "away_code": "EGY"
   },
   {
     "fifa_match_no": 89,
