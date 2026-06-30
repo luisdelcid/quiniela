@@ -143,6 +143,7 @@ class QM2026_Admin {
 			'status'              => sanitize_key( wp_unslash( $_POST['status'] ?? 'scheduled' ) ),
 			'home_score'          => ( '' !== ( $_POST['home_score'] ?? '' ) ) ? intval( $_POST['home_score'] ) : null,
 			'away_score'          => ( '' !== ( $_POST['away_score'] ?? '' ) ) ? intval( $_POST['away_score'] ) : null,
+			'penalty_winner_team_id' => absint( $_POST['penalty_winner_team_id'] ?? 0 ) ?: null,
 			'prediction_deadline' => ! empty( $_POST['prediction_deadline'] ) ? str_replace( 'T', ' ', sanitize_text_field( wp_unslash( $_POST['prediction_deadline'] ) ) ) : null,
 			'updated_at'          => current_time( 'mysql' ),
 		);

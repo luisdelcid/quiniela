@@ -6,14 +6,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 class QM2026_Scoring {
 	public function calculate_prediction( object $match, object $prediction, array $rules ): array {
 		$points = 0;
-		$exact  = ( (int) $prediction->home_score === (int) $match->home_score && (int) $prediction->away_score === (int) $match->away_score );
+		$score_exact = ( (int) $prediction->home_score === (int) $match->home_score && (int) $prediction->away_score === (int) $match->away_score );
 		$real_diff = (int) $match->home_score - (int) $match->away_score;
 		$pred_diff = (int) $prediction->home_score - (int) $prediction->away_score;
 		$real_side = $real_diff <=> 0;
 		$pred_side = $pred_diff <=> 0;
-		$winner_correct = $real_side === $pred_side;
+		$is_knockout = isset( $match->phase ) && 'group' !== $match->phase;
+		$actual_winner_team_id = $this->get_winner_team_id( $match, $real_side );
+		$predicted_winner_team_id = $this->get_predicted_winner_team_id( $match, $prediction, $pred_side );
+		$winner_correct = $is_knockout && 0 === $real_side
+			? ( null !== $actual_winner_team_id && $actual_winner_team_id === $predicted_winner_team_id )
+			: ( $real_side === $pred_side );
 		$goal_diff_correct = $real_diff === $pred_diff;
 		$team_goals_correct = ( (int) $prediction->home_score === (int) $match->home_score ) || ( (int) $prediction->away_score === (int) $match->away_score );
+		$exact = $score_exact && ( ! $is_knockout || 0 !== $real_side || $winner_correct );
 
 		if ( $exact ) {
 			$points += absint( $rules['exact_score'] ?? 5 );
@@ -36,6 +42,27 @@ class QM2026_Scoring {
 			'goal_diff_abs'      => abs( $real_diff - $pred_diff ),
 			'details'            => array( 'rules' => $rules ),
 		);
+	}
+
+
+	private function get_winner_team_id( object $match, int $side ): ?int {
+		if ( 0 < $side ) {
+			return ! empty( $match->home_team_id ) ? (int) $match->home_team_id : null;
+		}
+		if ( 0 > $side ) {
+			return ! empty( $match->away_team_id ) ? (int) $match->away_team_id : null;
+		}
+		return ! empty( $match->penalty_winner_team_id ) ? (int) $match->penalty_winner_team_id : null;
+	}
+
+	private function get_predicted_winner_team_id( object $match, object $prediction, int $side ): ?int {
+		if ( 0 < $side ) {
+			return ! empty( $match->home_team_id ) ? (int) $match->home_team_id : null;
+		}
+		if ( 0 > $side ) {
+			return ! empty( $match->away_team_id ) ? (int) $match->away_team_id : null;
+		}
+		return ! empty( $prediction->predicted_winner_team_id ) ? (int) $prediction->predicted_winner_team_id : null;
 	}
 
 	public function recalculate_match( int $match_id ): void {
