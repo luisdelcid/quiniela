@@ -1075,45 +1075,53 @@
     "fifa_match_no": 97,
     "phase": "quarter_final",
     "group": "",
-    "home_placeholder": "Ganador Partido 89",
-    "away_placeholder": "Ganador Partido 90",
+    "home_placeholder": "Francia",
+    "away_placeholder": "Marruecos",
     "datetime": "2026-07-09 14:00:00",
     "stadium": "Estadio Boston",
     "city": "Boston",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "FRA",
+    "away_code": "MAR"
   },
   {
     "fifa_match_no": 98,
     "phase": "quarter_final",
     "group": "",
-    "home_placeholder": "Ganador Partido 93",
-    "away_placeholder": "Ganador Partido 94",
+    "home_placeholder": "España",
+    "away_placeholder": "Bélgica",
     "datetime": "2026-07-10 13:00:00",
     "stadium": "Estadio Los Ángeles",
     "city": "Los Ángeles",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "ESP",
+    "away_code": "BEL"
   },
   {
     "fifa_match_no": 99,
     "phase": "quarter_final",
     "group": "",
-    "home_placeholder": "Ganador Partido 91",
-    "away_placeholder": "Ganador Partido 92",
+    "home_placeholder": "Noruega",
+    "away_placeholder": "Inglaterra",
     "datetime": "2026-07-11 15:00:00",
     "stadium": "Estadio Miami",
     "city": "Miami",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "NOR",
+    "away_code": "ENG"
   },
   {
     "fifa_match_no": 100,
     "phase": "quarter_final",
     "group": "",
-    "home_placeholder": "Ganador Partido 95",
-    "away_placeholder": "Ganador Partido 96",
+    "home_placeholder": "Argentina",
+    "away_placeholder": "Suiza",
     "datetime": "2026-07-11 19:00:00",
     "stadium": "Estadio Kansas City",
     "city": "Kansas City",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "ARG",
+    "away_code": "SUI"
   },
   {
     "fifa_match_no": 101,
