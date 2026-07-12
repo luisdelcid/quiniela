@@ -1127,23 +1127,27 @@
     "fifa_match_no": 101,
     "phase": "semi_final",
     "group": "",
-    "home_placeholder": "Ganador Partido 97",
-    "away_placeholder": "Ganador Partido 98",
+    "home_placeholder": "Francia",
+    "away_placeholder": "España",
     "datetime": "2026-07-14 13:00:00",
     "stadium": "Estadio Dallas",
     "city": "Dallas",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "FRA",
+    "away_code": "ESP"
   },
   {
     "fifa_match_no": 102,
     "phase": "semi_final",
     "group": "",
-    "home_placeholder": "Ganador Partido 99",
-    "away_placeholder": "Ganador Partido 100",
+    "home_placeholder": "Inglaterra",
+    "away_placeholder": "Argentina",
     "datetime": "2026-07-15 13:00:00",
     "stadium": "Estadio Atlanta",
     "city": "Atlanta",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "ENG",
+    "away_code": "ARG"
   },
   {
     "fifa_match_no": 103,
