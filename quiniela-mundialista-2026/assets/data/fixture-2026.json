@@ -1153,22 +1153,26 @@
     "fifa_match_no": 103,
     "phase": "third_place",
     "group": "",
-    "home_placeholder": "Perdedor Partido 101",
-    "away_placeholder": "Perdedor Partido 102",
+    "home_placeholder": "Francia",
+    "away_placeholder": "Inglaterra",
     "datetime": "2026-07-18 15:00:00",
     "stadium": "Estadio Miami",
     "city": "Miami",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "FRA",
+    "away_code": "ENG"
   },
   {
     "fifa_match_no": 104,
     "phase": "final",
     "group": "",
-    "home_placeholder": "Ganador Partido 101",
-    "away_placeholder": "Ganador Partido 102",
+    "home_placeholder": "España",
+    "away_placeholder": "Argentina",
     "datetime": "2026-07-19 13:00:00",
     "stadium": "Estadio Nueva York Nueva Jersey",
     "city": "Nueva York/Nueva Jersey",
-    "status": "scheduled"
+    "status": "scheduled",
+    "home_code": "ESP",
+    "away_code": "ARG"
   }
 ]
